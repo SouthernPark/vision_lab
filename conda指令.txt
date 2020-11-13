@@ -1,0 +1,36 @@
+﻿conda activate <env_name>  --anaconda将我们进入设定的虚拟环境当中，默认为base环境 （用于切换环境）
+
+
+
+conda deactivate  --anaconda退出我们设定的虚拟环境当中
+
+
+
+
+conda create -n <env_name> python=x --创建一个名字为env_name的，跑一趟好哦内版本为x的虚拟环境。(通常x=2或3 ，conda会自动寻找最新版本)
+
+
+
+conda env list --插件所有的环境
+
+
+在安装包之前要确认环境是否是正确的环境
+conda install <pk_name>  --使用anaconda安装包  (或者 pip install <pk_name>)
+
+
+
+conda remove  <pk_name>  --使用anaconda卸载一个包 （或者 pip uninstall <pk_name>）
+
+
+
+conda list  --查看当前环境下安装了哪些包
+
+
+
+conda env export --file <name>.yml  --用于导出当前环境的包 （用于复制环境 复制产生的文件 会保存在当前工作目录下）
+
+
+
+conda env create -f <name>.yml  --用于创建一个环境，该环境包含有name.yaml中包含的包
+
+

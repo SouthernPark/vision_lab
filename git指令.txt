@@ -1,0 +1,3 @@
+git remote add origin https://github.com/SouthernPark/web_development_materials.git
+
+git push -u origin master
